@@ -12,9 +12,8 @@ only:
   - test-ci
   
 script:
-  - docker pull michelleamesquita/cucumber-bdd-ci
-  - docker run -v $PWD/:/app/report/ michelleamesquita/cucumber-bdd-ci
-
+  - docker pull cheoberin/imagem-teste
+  - docker run -v $PWD/:/app/report/ cheoberin/imagem-teste
 # after_script:
 #   - bash ./telegram_notification.sh
   
